@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/chrvadala/react-stylerify/issues"
   },
-  "homepage": "https://github.com/chrvadala/react-stylerify#readme"
+  "homepage": "https://github.com/chrvadala/react-stylerify#readme",
+  "dependencies": {
+    "react-styling": "^1.4.0",
+    "through": "^2.3.8"
+  }
 }
