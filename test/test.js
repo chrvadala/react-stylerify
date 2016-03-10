@@ -9,9 +9,6 @@ var stylerify = require('../');
 var browserify = require('browserify');
 var through = require('through');
 
-function readFile(file) {
-    return fs.readFileSync(path.join(__dirname, file), 'utf8');
-}
 
 function checkBrowserify(expectedJSONFile, projectFile, t){
     var buffer = '';
@@ -22,8 +19,8 @@ function checkBrowserify(expectedJSONFile, projectFile, t){
         ]
     };
 
-    var expected = JSON.stringify(require(expectedJSONFile));
-    var b = browserify(projectFile, config);
+    var expected = JSON.stringify(require(path.join(__dirname, expectedJSONFile)));
+    var b = browserify(path.join(__dirname, projectFile), config);
 
     b.bundle().pipe(through(
         function (chunk) {
@@ -48,24 +45,24 @@ test('return a through stream', function (t) {
 
 test('check browserify with radium extension', function (t) {
     checkBrowserify(
-        './fixtures/expected/sample.json',
-        './fixtures/source/import.radium.js',
+        'fixtures/expected/sample.json',
+        'fixtures/source/import.radium.js',
         t
     );
 });
 
 test('check browserify with css extension', function (t) {
     checkBrowserify(
-        './fixtures/expected/sample.json',
-        './fixtures/source/import.css.js',
+        'fixtures/expected/sample.json',
+        'fixtures/source/import.css.js',
         t
     );
 });
 
 test('check browserify with style extension', function (t) {
     checkBrowserify(
-        './fixtures/expected/sample.json',
-        './fixtures/source/import.style.js',
+        'fixtures/expected/sample.json',
+        'fixtures/source/import.style.js',
         t
     );
 });
