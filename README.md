@@ -1,14 +1,16 @@
 
-# react-stylerify
+# React stylerify
 
 ```
 npm install react-stylerify
+
 browserify -t react-stylerify -o build.js main.js
 ```
-react-stylerify is a browserify wrapper around [react-styling](https://github.com/halt-hammerzeit/react-styling), that allow to import style from external file through `require('mystyle.radium');` or `require('mystyle.css');` or `require('mystyle.style');`.
+
+React stylerify is a browserify wrapper around [react-styling](https://github.com/halt-hammerzeit/react-styling), that allow to import style from external file through `require('mystyle.radium');` or `require('mystyle.css');` or `require('mystyle.style');`.
 
 ## Working example
-[This project](https://github.com/chrvadala/react-with-react-template-and-radium) use [Radium](http://stack.formidable.com/radium/) together with [React Template](http://wix.github.io/react-templates/).
+[This project](https://github.com/chrvadala/react-with-react-template-and-radium) uses [Radium](http://stack.formidable.com/radium/) together with [React Template](http://wix.github.io/react-templates/).
 
 ## Usage
 ```jsx
@@ -45,7 +47,7 @@ class Button extends React.Component {
 ```
 
 ```css
-//style.radium
+/*style.radium*/
 base: {
     color: '#fff';
     :hover{
