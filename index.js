@@ -3,7 +3,7 @@
 var through = require('through');
 var styleParser = require('react-styling').default;
 
-var isStyle = /\.(csso|css|styl|sass|scss|less)$/;
+var isStyle = /\.(css|style|radium)$/;
 
 module.exports = function (filename) {
     if (!isStyle.exec(filename)) return through();

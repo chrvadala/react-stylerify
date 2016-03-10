@@ -1,0 +1,14 @@
+mystyle{
+  color: darkgreen;
+  font-size: 20px;
+  cursor: pointer;
+
+  :hover{
+    color: blue;
+    text-decoration: underline;
+  }
+}
+
+anotherstyle {
+  font-size: 20px;
+}

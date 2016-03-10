@@ -4,7 +4,7 @@
   "description": "A browserify wrapper around react-styling",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/test.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,13 @@
   "dependencies": {
     "react-styling": "^1.4.0",
     "through": "^2.3.8"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "concat-stream": "^1.5.1",
+    "expect.js": "^0.3.1",
+    "fs": "0.0.2",
+    "path": "^0.12.7",
+    "tape": "^4.5.1"
   }
 }

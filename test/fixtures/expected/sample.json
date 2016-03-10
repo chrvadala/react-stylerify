@@ -1,0 +1,15 @@
+{
+  "mystyle": {
+    "color": "darkgreen",
+    "fontSize": "20px",
+    "cursor": "pointer",
+    ":hover": {
+      "color": "blue",
+      "textDecoration": "underline"
+    }
+  },
+  "anotherstyle": {
+    "fontSize": "20px"
+  }
+}
+
