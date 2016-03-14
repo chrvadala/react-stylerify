@@ -1,6 +1,6 @@
 mystyle{
   color: darkgreen;
-  font-size: `return this.number + 'px'`;
+  font-size: `var a = this.number; return a * 2;`;
   cursor: pointer;
 
   :hover{
