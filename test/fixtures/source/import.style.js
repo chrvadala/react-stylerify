@@ -1,3 +1,3 @@
 var style = require("./sample.style");
 
-console.log(style);
+console.log(style());

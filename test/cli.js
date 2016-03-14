@@ -1,5 +1,6 @@
 var browserify = require('browserify');
 var stylerify = require('../');
+var path = require('path');
 
 var config = {
     transform: [
@@ -7,7 +8,7 @@ var config = {
     ]
 };
 
-var b = browserify('./fixtures/source/import.js', config);
+var b = browserify(path.join(__dirname, 'fixtures/source/import.css.js'), config);
 b.bundle().pipe(process.stdout);
 
 //b.bundle().pipe(fs.createWriteStream("./bundle.js"));
