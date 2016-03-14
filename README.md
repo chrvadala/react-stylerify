@@ -20,11 +20,11 @@ React stylerify is a browserify wrapper around [react-styling](https://github.co
 ```jsx
 var Radium = require('radium');
 var React = require('react');
-var styles = require('style.radium');
+var styles = require('style.radium')();
 
 // alternately
-//var styles = require('style.css');
-//var styles = require('style.style');
+//var styles = require('style.css')();
+//var styles = require('style.style')();
 
 @Radium
 class Button extends React.Component {
@@ -47,7 +47,7 @@ class Button extends React.Component {
 ```
 
 ```css
-/*style.radium*/
+/* style.radium */
 base: {
     color: '#fff';
     :hover{
