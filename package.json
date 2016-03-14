@@ -1,6 +1,6 @@
 {
   "name": "react-stylerify",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A browserify wrapper around react-styling",
   "main": "index.js",
   "scripts": {
