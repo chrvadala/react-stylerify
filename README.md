@@ -30,7 +30,7 @@ base: {
 }
 primary: {
     background: #0074D9;
-    font-size: `return var s = this.size; return s + 10;`
+    font-size: `var s = this.size; return s + 10;`
     color: `return this.color`;
 }
 
