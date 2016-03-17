@@ -16,7 +16,7 @@ React stylerify is a browserify wrapper around [react-styling](https://github.co
 * Doesn't use ES6 and than doesn't need Babel
 
 ## Working example
-[The project react-with-react-template-and-radium](https://github.com/chrvadala/react-with-react-template-and-radium) uses [Radium](http://stack.formidable.com/radium/) together with [React Template](http://wix.github.io/react-templates/).
+[The project (react-with-react-template-and-radium)](https://github.com/chrvadala/react-with-react-template-and-radium) uses [Radium](http://stack.formidable.com/radium/) together with [React Template](http://wix.github.io/react-templates/).
 
 ## Usage
 
